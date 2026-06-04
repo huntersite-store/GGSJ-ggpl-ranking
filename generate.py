@@ -544,7 +544,7 @@ header {{
 }}
 .hero-title-img {{
   display: block;
-  width: min(96%, 820px);
+  width: min(80%, 560px);
   height: auto;
   margin: 0 auto;
   position: relative;
@@ -869,7 +869,6 @@ header {{
 <!-- ── Ring panel ── -->
 <div class="category-panel ring-panel active" id="ring-panel">
   <div class="hero ring-hero">
-    <div class="hero-label">S E A S O N &nbsp; R A N K I N G</div>
     <img src="title_ring.png" class="hero-title-img" alt="リングゲームポイントランキング">
   </div>
   <div class="content-wrap">{ring_html}</div>
@@ -878,7 +877,6 @@ header {{
 <!-- ── Daily panel ── -->
 <div class="category-panel daily-panel" id="daily-panel">
   <div class="hero daily-hero">
-    <div class="hero-label">D A I L Y &nbsp; R A N K I N G</div>
     <img src="title_daily.png" class="hero-title-img" alt="デイリーリングポイントランキング">
   </div>
   <div class="content-wrap">{daily_html}</div>
@@ -887,7 +885,6 @@ header {{
 <!-- ── Tournament panel ── -->
 <div class="category-panel toname-panel" id="toname-panel">
   <div class="hero toname-hero">
-    <div class="hero-label">M O N T H L Y &nbsp; T O U R N A M E N T</div>
     <img src="title_toname.png" class="hero-title-img" alt="MONTHLY DEEP RANKING">
   </div>
   <div class="content-wrap">{toname_html}</div>
