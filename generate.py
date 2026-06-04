@@ -340,8 +340,9 @@ def _season_tabs_html(seasons, color_key, no_data_msg):
     tabs = '<div class="season-tabs">'
     for i, s in enumerate(seasons):
         active = "active" if i == 0 else ""
+        past   = 'data-past="true"' if i > 0 else ""
         tabs += (f'<button class="season-btn {active} {color_key}-tab-btn" '
-                 f'onclick="switchSeason(this,\'{color_key}-sp-{i}\')">{s["title"]}</button>')
+                 f'{past} onclick="switchSeason(this,\'{color_key}-sp-{i}\')">{s["title"]}</button>')
     tabs += '</div>'
 
     panels = ''
@@ -389,6 +390,7 @@ def generate_html(ring_seasons, daily_seasons, toname_seasons, updated_at):
 <title>GGP LIVE SHINJUKU - RANKING</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;900&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 <style>
 /* ── Variables ── */
 :root {{
@@ -907,6 +909,12 @@ function switchSeason(btn, id) {{
   btn.classList.add('active');
   var el = document.getElementById(id);
   if (el) el.classList.add('active');
+  if (btn.dataset.past === 'true') fireConfetti();
+}}
+function fireConfetti() {{
+  var colors = ['#d4af37','#ffe066','#fff','#c0392b','#2980b9','#8e44ad'];
+  confetti({{ particleCount: 80, angle: 60, spread: 55, origin: {{x: 0, y: 0.65}}, colors: colors }});
+  confetti({{ particleCount: 80, angle: 120, spread: 55, origin: {{x: 1, y: 0.65}}, colors: colors }});
 }}
 
 function openSearch() {{
