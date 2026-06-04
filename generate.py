@@ -307,7 +307,7 @@ def _podium_html(ranking, color_key):
             if place == "first":
                 h += '<div class="podium-stars">✦ ✦ ✦</div>'
             h += f'<div class="pod-rank-badge badge-{place}">{block_num}</div>'
-            h += f'<div class="pod-name">{player["name"]}</div>'
+            h += f'<div class="pod-name pod-name-{place}">{player["name"]}</div>'
             h += f'<div class="pod-pts {color_key}-pts">{player["points"]}</div>'
         h += f'<div class="pod-block {block_cls}"></div>'
         h += '</div>'
@@ -659,16 +659,35 @@ header {{
 }}
 
 .pod-name {{
-  font-size: 1.0rem;
+  font-size: 1.05rem;
   font-weight: 900;
   text-align: center;
-  color: var(--text);
   margin: 6px 4px 3px;
   word-break: break-all;
   line-height: 1.2;
+  letter-spacing: 0.03em;
 }}
-.podium-place.first .pod-name {{
-  font-size: 1.15rem;
+.pod-name-first {{
+  font-size: 1.3rem;
+  background: linear-gradient(180deg, #fff8d0 0%, #ffe566 30%, #d4a017 65%, #8b5e00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 6px rgba(212,175,55,0.85)) drop-shadow(0 1px 3px rgba(0,0,0,0.4));
+}}
+.pod-name-second {{
+  background: linear-gradient(180deg, #ffffff 0%, #d8d8d8 40%, #909090 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 4px rgba(200,200,200,0.7)) drop-shadow(0 1px 2px rgba(0,0,0,0.3));
+}}
+.pod-name-third {{
+  background: linear-gradient(180deg, #f8d09a 0%, #e09050 40%, #8a4800 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 4px rgba(200,120,50,0.6)) drop-shadow(0 1px 2px rgba(0,0,0,0.3));
 }}
 .pod-pts {{
   font-size: 0.88rem;
