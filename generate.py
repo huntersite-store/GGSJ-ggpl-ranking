@@ -544,7 +544,7 @@ header {{
 }}
 .hero-title-img {{
   display: block;
-  width: min(80%, 560px);
+  width: min(92%, 740px);
   height: auto;
   margin: 0 auto;
   position: relative;
