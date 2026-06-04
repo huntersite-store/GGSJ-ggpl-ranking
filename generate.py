@@ -669,28 +669,25 @@ header {{
 }}
 .pod-name-first {{
   font-size: 1.3rem;
-  background: linear-gradient(180deg, #fff0a0 0%, #f0c020 35%, #b87800 70%, #6b3d00 100%);
+  background: linear-gradient(160deg, #ffe866 0%, #f0a800 50%, #c07800 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  -webkit-text-stroke: 0.5px rgba(100,60,0,0.5);
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.55)) drop-shadow(0 0 8px rgba(212,175,55,0.6));
+  filter: drop-shadow(0 0 10px rgba(255,210,0,0.7)) drop-shadow(0 0 3px rgba(255,190,0,0.5));
 }}
 .pod-name-second {{
-  background: linear-gradient(180deg, #e0e0e0 0%, #a0a0a0 45%, #505050 100%);
+  background: linear-gradient(160deg, #c8d8f0 0%, #7090c0 50%, #4060a0 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  -webkit-text-stroke: 0.5px rgba(30,30,30,0.4);
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5)) drop-shadow(0 0 5px rgba(150,150,150,0.4));
+  filter: drop-shadow(0 0 8px rgba(100,150,220,0.6));
 }}
 .pod-name-third {{
-  background: linear-gradient(180deg, #f0b070 0%, #c06820 45%, #6a3000 100%);
+  background: linear-gradient(160deg, #ffd0a0 0%, #e08040 50%, #b05010 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  -webkit-text-stroke: 0.5px rgba(80,30,0,0.4);
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5)) drop-shadow(0 0 5px rgba(180,90,20,0.4));
+  filter: drop-shadow(0 0 8px rgba(220,130,50,0.6));
 }}
 .pod-pts {{
   font-size: 0.88rem;
