@@ -517,7 +517,7 @@ header {{
 
 /* ── Hero banner ── */
 .hero {{
-  padding: 28px 20px 24px;
+  padding: 14px 20px 12px;
   text-align: center;
   position: relative;
   overflow: hidden;
