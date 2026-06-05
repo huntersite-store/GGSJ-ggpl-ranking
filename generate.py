@@ -854,7 +854,7 @@ header {{
     <img src="logo.png" class="logo-img" alt="GGP LIVE SHINJUKU">
   </div>
   <div class="header-center">
-    <div class="header-title">ランキングまとめ</div>
+    <div class="header-title">R A N K I N G</div>
     <div class="header-sub">最終更新: {updated_at}</div>
   </div>
   <button class="search-btn" onclick="openSearch()" aria-label="検索">
